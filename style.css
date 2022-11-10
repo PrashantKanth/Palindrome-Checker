@@ -1,0 +1,75 @@
+@font-face {
+    font-family: 'Gotham Rounded';
+    src: url(fonts/GothamRounded-Bold.otf);
+}
+
+@font-face {
+    font-family: 'Xanh Mono';
+    src: url(fonts/XanhMono-Regular.ttf);
+}
+
+
+body {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    font-family: 'Gotham Rounded', sans-serif;
+    background: linear-gradient(to left, #00FF6C, #00AAFF);
+    text-align: center;
+} 
+
+.main {
+    padding: 50px 0;
+}
+
+#heading {
+    color: rgba(24, 10, 10,0.75);
+    margin: 10px;
+    width: auto;
+    font-size: 3rem;
+    font-weight: bold;
+}
+
+.input-palin{
+    padding: 20px;
+    width: auto;
+}
+
+label {
+    color: #395B64;
+    font-size: 25px;
+}
+
+input {
+    font-family: 'Xanh Mono', serif;
+    font-weight: bold;
+    padding: 10px;
+    border: none;
+    border-radius: 2px;
+    font-size: 15px;
+    width: 300px;
+    height: 40px;
+}
+
+input:hover {
+    background-color: #DEF5E5;
+    transform: scale(1.1)
+}
+
+#result {
+    padding: 10px;
+    font-size: 20px;
+    width: auto;
+}
+
+#sent {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    background-color: #DEF5E5;
+}
+
+#sent:focus {
+    outline: none;
+}
+
+
+

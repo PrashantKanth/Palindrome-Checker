@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="gear.ico" type="image/x-icon">
+    <title>Palindrome Checker</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="style.css">
+    </head>
+
+<body>
+    <br>
+    <br>
+      <div class="main">
+        <div id="heading">
+            <h2>Check Your Palindrome!</h2>
+        </div>
+        <br>
+        <br>
+        <br>
+        <div class="input-palin">
+            <form id="formData">
+                <label for="user">Enter Below or Select one from list:</label>
+                <br>
+                <br>
+                <input id="sent" name="user" type="text" list="palin">
+                <datalist id="palin">
+                    <option value="Nurses Run"></option>
+                    <option value="Redivider"></option>
+                    <option value="Mr. Owl ate my metal worm"></option>
+                    <option value="Live on time, emit no evil"></option>
+                </datalist>
+                <br>
+                <br>
+                <input type="submit" id="sub" value="Check My Palindrome!">
+                <br>
+                <br>
+                <input type="reset" id="reset" value="Have Another One?">
+            </form>
+        </div>
+        <br>
+        <br>
+        <div>
+            <span id="result"></span>
+        </div>
+        <br>
+        <br>
+      </div>
+    <br>
+    <br>
+
+    <script src="palindromeChecker.js" charset="utf-8"></script>
+</body>
+
+</html>
+
+
+
