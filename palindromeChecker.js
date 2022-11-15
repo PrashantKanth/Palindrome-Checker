@@ -30,11 +30,13 @@ const formData = document.forms['formData'];
 formData.addEventListener('submit', e => {
     e.preventDefault();
     
+    //data is the User-Input 
     let data = formData.querySelector('#sent').value;
     
     const CORRECT = ["That is indeed a Palindrome.", "Palindrome Detected.", "Correct."];
     const INCORRECT = ["Incorrect", "Try Again"];
-
+    
+    //info is the value of palindromeFunction
     let info = palindrome(data);
 
     let countCOR = Math.floor(Math.random() * CORRECT.length);
@@ -53,4 +55,17 @@ formData.addEventListener('submit', e => {
         style.color = "red";
         document.querySelector("#result").innerHTML = INCORRECT[countINCOR];
     }
+
+    if(data == ""){
+        document.querySelector("#result").innerHTML= "Enter Something😑"
+    }
+
 })
+
+//setting reset functionality
+//refreshes webpage
+let reset = document.querySelector("#reset");
+    
+reset.onclick = () => {
+    window.location.reload();
+}
